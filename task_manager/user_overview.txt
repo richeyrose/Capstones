@@ -1,0 +1,113 @@
+
+User Report
+________________________________________________________________________________
+
+Total registered users:             12
+Total tasks:                        3
+________________________________________________________________________________
+
+Username:                           admin
+Number of tasks assigned to user:   2
+% tasks assigned to user:           67 %
+% user tasks complete               0 %
+% user tasks incomplete             100 %
+% user tasks overdue                50 %
+
+________________________________________________________________________________
+
+Username:                           john
+Number of tasks assigned to user:   0
+% tasks assigned to user:           0 %
+% user tasks complete               0 %
+% user tasks incomplete             0 %
+% user tasks overdue                0 %
+
+________________________________________________________________________________
+
+Username:                           jane
+Number of tasks assigned to user:   0
+% tasks assigned to user:           0 %
+% user tasks complete               0 %
+% user tasks incomplete             0 %
+% user tasks overdue                0 %
+
+________________________________________________________________________________
+
+Username:                           bobby
+Number of tasks assigned to user:   1
+% tasks assigned to user:           33 %
+% user tasks complete               100 %
+% user tasks incomplete             0 %
+% user tasks overdue                0 %
+
+________________________________________________________________________________
+
+Username:                           james
+Number of tasks assigned to user:   0
+% tasks assigned to user:           0 %
+% user tasks complete               0 %
+% user tasks incomplete             0 %
+% user tasks overdue                0 %
+
+________________________________________________________________________________
+
+Username:                           hati
+Number of tasks assigned to user:   0
+% tasks assigned to user:           0 %
+% user tasks complete               0 %
+% user tasks incomplete             0 %
+% user tasks overdue                0 %
+
+________________________________________________________________________________
+
+Username:                           rachel
+Number of tasks assigned to user:   0
+% tasks assigned to user:           0 %
+% user tasks complete               0 %
+% user tasks incomplete             0 %
+% user tasks overdue                0 %
+
+________________________________________________________________________________
+
+Username:                           annabelle
+Number of tasks assigned to user:   0
+% tasks assigned to user:           0 %
+% user tasks complete               0 %
+% user tasks incomplete             0 %
+% user tasks overdue                0 %
+
+________________________________________________________________________________
+
+Username:                           harry
+Number of tasks assigned to user:   0
+% tasks assigned to user:           0 %
+% user tasks complete               0 %
+% user tasks incomplete             0 %
+% user tasks overdue                0 %
+
+________________________________________________________________________________
+
+Username:                           brian
+Number of tasks assigned to user:   0
+% tasks assigned to user:           0 %
+% user tasks complete               0 %
+% user tasks incomplete             0 %
+% user tasks overdue                0 %
+
+________________________________________________________________________________
+
+Username:                           penelope
+Number of tasks assigned to user:   0
+% tasks assigned to user:           0 %
+% user tasks complete               0 %
+% user tasks incomplete             0 %
+% user tasks overdue                0 %
+
+________________________________________________________________________________
+
+Username:                           jamie
+Number of tasks assigned to user:   0
+% tasks assigned to user:           0 %
+% user tasks complete               0 %
+% user tasks incomplete             0 %
+% user tasks overdue                0 %

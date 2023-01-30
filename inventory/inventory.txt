@@ -1,0 +1,34 @@
+Country,Code,Product,Cost,Quantity
+South Africa,SKU44386,Air Max 90,2300.0,20
+China,SKU90000,Jordan 1,3200.0,50
+Vietnam,SKU63221,Blazer,1700.0,19
+United States,SKU29077,Cortez,970.0,60
+Russia,SKU89999,Air Force 1,2000.0,43
+Australia,SKU57443,Waffle Racer,2700.0,14
+Canada,SKU68677,Air Max 97,3600.0,13
+Egypt,SKU19888,Dunk SB,1500.0,26
+Britain,SKU76000,Kobe 4,3400.0,32
+France,SKU84500,Pegasus,2490.0,28
+Zimbabwe,SKU20207,Air Presto,2999.0,12
+Morocco,SKU77744,Challenge Court,1450.0,11
+Israel,SKU29888,Air Zoom Generation,2680.0,26
+Uganda,SKU33000,Flyknit Racer,4900.0,9
+Pakistan,SKU77999,Air Yeezy 2,4389.0,67
+Brazil,SKU44600,Air Jordan 11,3870.0,24
+Columbia,SKU87500,Air Huarache,2683.0,8
+India,SKU38773,Air Max 1,1900.0,29
+Vietnam,SKU95000,Air Mag,2000.0,12
+Israel,SKU79084,Air Foamposite,2430.0,24
+China,SKU93222,Air Stab,1630.0,10
+South Korea,SKU66734,Hyperdunk,1899.0,17
+Australia,SKU71827,Zoom Hyperfuse,1400.0,15
+France,SKU20394,Eric Koston 1,2322.0,17
+UK,SKU57214,Super Shoe,1000.0,20
+UK,SKU18741,Mega Shoe,1000.0,45
+UK,SKU73512,Amazing Shoe,1000.0,45
+UK,SKU72654,Peerless Shoe,2000.0,45
+France,SKU92475,The Mega Shoe,750.0,52
+France,SKU26458,Shoey Shoe,62.0,12
+USA,SKU82691,Clown Show,500.0,12
+Germany,SKU84621,Cuban Boot,750.0,200
+UK,SKU78952,Bob's Shoe,2700.0,54

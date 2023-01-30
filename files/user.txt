@@ -1,0 +1,8 @@
+admin, adm1n
+john, longlongpassword
+jane, janespassword
+bobby, bobbypassword
+james, jamespassword
+hati, hatipassword
+rachel, rachelpassword
+annabelle, annapassword
