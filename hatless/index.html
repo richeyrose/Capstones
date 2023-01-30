@@ -1,0 +1,350 @@
+<!-- Comments:
+Idea for page layout shamelessly nicked from number 31. located here https://www.oberlo.co.uk/blog/ecommerce-website-design-examples
+Pictures of hats from https://unsplash.com/images/stock/creative-common
+
+I'm using prettier for code formatting and have set the length to 120 characters as otherwise it gets really hard to see read the lines where
+I'm stacking multiple bootstrap classes to deal with mobile and desktop layouts.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Import Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- Import out own stylesheet for overriding defaults so it doesn't look like every second website out there-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Import three weights of a nice font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hatless</title>
+  </head>
+  <body>
+    <!-- Our main container -->
+    <div class="container">
+      <!-- Header uses fonts so is nice and smooth at all resolutions -->
+      <header class="row-sm hero mb-5">
+        <!-- Don't want this to wrap. Underline the "Less" and use a lighter weight to make it look like something out
+            of an issue of ID in the 90s (I'm old and that's when I last studied typography) -->
+        <span class="align-top col-sm"
+          ><h1>HAT<span class="underline align-top text-nowrap light">LESS</span></h1></span
+        >
+      </header>
+
+      <!-- Hat catalogue starts -->
+      <main>
+        <!-- Hat Row Left-->
+        <div class="row mb-5">
+          <!-- On narrow sreens we're going to have our images and text stack vertically  -->
+          <div class="col-sm-7 d-flex align-items-center justify-content-sm-end justify-content-xs-center img-col">
+            <!-- When the user hovers over a hat image we want it to become slightly transparent and reveal some "Buy Me"
+                text so we layer two images over each other using the z-axis property-->
+            <div class="middle d-flex align-items-center">
+              <img src="./images/buy-me-500px.png" alt="Buy Me" />
+            </div>
+            <a href="#">
+              <div class="hat-img d-flex align-items-center">
+                <img src="./images/fedora-500px.png" alt="The Capone" />
+              </div>
+            </a>
+          </div>
+          <!-- We want to show a dark border at the edge of the image. It would be good to get rid of this when we
+            hit extra small and stack our cards but Bootstrap doesn't support this and we would have to get into the weeds
+            with media queries to implement it -->
+          <div class="col-sm-5 border-start border-3 border-dark">
+            <div class="hat-desc">
+              <!-- Lot of mucking about with text styling. -->
+              <div>
+                <h2 class="left"><strong>THE</strong> <span class="light">CAPONE</span></h2>
+              </div>
+              <div><h3 class="left">CHICAGO STYLE</h3></div>
+              <div>
+                <h4 class="left">Sexy, Stylish, And Ever So Slightly Sinister</h4>
+              </div>
+              <div><h5 class="left">£120</h5></div>
+              <div>
+                <button type="button" class="hatless-button btn btn-outline-primary left">Buy Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hat Row Left-->
+
+        <!-- Hat Row Right -->
+        <!-- This is basically the same as above but reversed horizontally and except we're using the order class to ensure that when we hit xs our
+        hat classes stack with images on top and description on bottom -->
+        <div class="row mb-5">
+          <div
+            class="col-sm-7 order-sm-2 d-flex align-items-center justify-content-sm-start justify-content-xs-center img-col"
+          >
+            <div class="middle d-flex align-items-center">
+              <img src="./images/buy-me-500px.png" alt="Buy Me" />
+            </div>
+            <a href="#"
+              ><div class="hat-img d-flex align-items-center">
+                <img src="./images/poppy-bobble-500px.png" alt="The Poppy" /></div
+            ></a>
+          </div>
+          <div class="col-sm-5 order-sm-1 border-end border-3 border-dark">
+            <div class="hat-desc">
+              <div>
+                <h2 class="right"><strong>THE</strong> <span class="light">POPPY</span></h2>
+              </div>
+              <div><h3 class="right">KNITTED PERFECTION</h3></div>
+              <div>
+                <h4 class="right">Wonderfully Warm Style With A Fuzzy Edge</h4>
+              </div>
+              <div><h5 class="right">£40</h5></div>
+              <div class="right">
+                <button type="button" class="hatless-button btn btn-outline-primary">Buy Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hat Row Right -->
+        <!-- Repeat another eight times -->
+        <div class="row mb-5">
+          <div class="col-sm-7 d-flex align-items-center justify-content-sm-end justify-content-xs-center img-col">
+            <div class="middle d-flex align-items-center">
+              <img src="./images/buy-me-500px.png" alt="Buy Me" />
+            </div>
+            <a href="#"
+              ><div class="hat-img d-flex align-items-center">
+                <img src="./images/greyball-500px.png" alt="The Greyball" /></div
+            ></a>
+          </div>
+          <div class="col-sm-5 border-start border-3 border-dark">
+            <div class="hat-desc">
+              <div>
+                <h2 class="left"><strong>THE</strong> <span class="light">GREYBALL</span></h2>
+              </div>
+              <div><h3 class="left">GREY SKIES, GREY HAT</h3></div>
+              <div><h4 class="left">Simple, Subtle, Slightly Stalky</h4></div>
+              <div><h5 class="left">£20</h5></div>
+              <div>
+                <button type="button" class="hatless-button btn btn-outline-primary">Buy Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div
+            class="col-sm-7 order-sm-2 d-flex align-items-center justify-content-sm-start justify-content-xs-center img-col"
+          >
+            <div class="middle d-flex align-items-center">
+              <img src="./images/buy-me-500px.png" alt="Buy Me" />
+            </div>
+            <a href="#"
+              ><div class="hat-img d-flex align-items-center justify-content-center">
+                <img src="./images/satsuma-straw-500px.png" alt="Satsuma Straw" /></div
+            ></a>
+          </div>
+          <div class="col-sm-5 order-sm-1 border-end border-3 border-dark">
+            <div class="hat-desc">
+              <div>
+                <h2 class="right"><strong>THE</strong> <span class="light">SATSUMA STRAW</span></h2>
+              </div>
+              <div><h3 class="right">A Brightened Up Classic</h3></div>
+              <div>
+                <h4 class="right">Woven By Little Old Ladies In Deepest Berkshire</h4>
+              </div>
+              <div><h5 class="right">£65</h5></div>
+              <div class="right">
+                <button type="button" class="hatless-button btn btn-outline-primary">Buy Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-sm-7 d-flex align-items-center justify-content-sm-end justify-content-xs-center img-col">
+            <div class="middle d-flex align-items-center">
+              <img src="./images/buy-me-500px.png" alt="Buy Me" />
+            </div>
+            <a href="#">
+              <div class="hat-img d-flex align-items-center">
+                <img src="./images/beanie-noir-500px.png" alt="Beanie Noir" /></div
+            ></a>
+          </div>
+          <div class="col-sm-5 border-start border-3 border-dark">
+            <div class="hat-desc">
+              <div>
+                <h2 class="left"><strong>THE</strong> <span class="light">BEANIE NOIR</span></h2>
+              </div>
+              <div><h3 class="left">IT'S A BEANIE. IT'S BLACK</h3></div>
+              <div>
+                <h4 class="left">No, Really, There's Not A lot Else To Say</h4>
+              </div>
+              <div><h5 class="left">£10</h5></div>
+              <div>
+                <button type="button" class="hatless-button btn btn-outline-primary">Buy Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div
+            class="col-sm-7 order-sm-2 d-flex align-items-center justify-content-sm-start justify-content-xs-center img-col"
+          >
+            <div class="middle d-flex align-items-center">
+              <img src="./images/buy-me-500px.png" alt="Buy Me" />
+            </div>
+            <a href="#"
+              ><div class="hat-img d-flex align-items-center justify-content-center">
+                <img src="./images/pinball-500px.png" alt="The Pinball" /></div
+            ></a>
+          </div>
+          <div class="col-sm-5 order-sm-1 border-end border-3 border-dark">
+            <div class="hat-desc">
+              <div>
+                <h2 class="right"><strong>THE</strong> <span class="light">PINBALL</span></h2>
+              </div>
+              <div><h3 class="right">PUNK MEETS BASEBALL</h3></div>
+              <div>
+                <h4 class="right">Because Why Not Stick A Safety Pin On A Hat?</h4>
+              </div>
+              <div><h5 class="right">£25</h5></div>
+              <div class="right">
+                <button type="button" class="hatless-button btn btn-outline-primary">Buy Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-sm-7 d-flex align-items-center justify-content-sm-end justify-content-xs-center img-col">
+            <div class="middle d-flex align-items-center">
+              <img src="./images/buy-me-500px.png" alt="Buy Me" />
+            </div>
+            <a href="#"
+              ><div class="hat-img d-flex align-items-center">
+                <img src="./images/ozzie-500px.png" alt="The Ozzie" /></div
+            ></a>
+          </div>
+          <div class="col-sm-5 border-start border-3 border-dark">
+            <div class="hat-desc">
+              <div>
+                <h2 class="left"><strong>THE</strong> <span class="light">OZZIE</span></h2>
+              </div>
+              <div><h3 class="left">KEEPS BOTH RAIN AND SUN OFF</h3></div>
+              <div><h4 class="left">Sexy, With A Whiff Of Kangaroo</h4></div>
+              <div><h5 class="left">£55</h5></div>
+              <div>
+                <button type="button" class="hatless-button btn btn-outline-primary">Buy Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div
+            class="col-sm-7 order-sm-2 d-flex align-items-center justify-content-sm-start justify-content-xs-center img-col"
+          >
+            <div class="middle d-flex align-items-center">
+              <img src="./images/buy-me-500px.png" alt="Buy Me" />
+            </div>
+            <a href="#">
+              <div class="hat-img d-flex align-items-center justify-content-center">
+                <img src="./images/origami-500px.png" alt="The Origami" /></div
+            ></a>
+          </div>
+          <div class="col-sm-5 order-sm-1 border-end border-3 border-dark">
+            <div class="hat-desc">
+              <div>
+                <h2 class="right"><strong>THE</strong> <span class="light">ORIGAMI</span></h2>
+              </div>
+              <div><h3 class="right">INTRICATELY FOLDED</h3></div>
+              <div>
+                <h4 class="right">These Take Hours To Make. Hence The Price.</h4>
+              </div>
+              <div><h5 class="right">£580</h5></div>
+              <div class="right">
+                <button type="button" class="hatless-button btn btn-outline-primary">Buy Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-sm-7 d-flex align-items-center justify-content-sm-end justify-content-xs-center img-col">
+            <div class="middle d-flex align-items-center">
+              <img src="./images/buy-me-500px.png" alt="Buy Me" />
+            </div>
+            <a href="#"
+              ><div class="hat-img d-flex align-items-center">
+                <img src="./images/trucker-joes-500px.png" alt="The Trucker" /></div
+            ></a>
+          </div>
+          <div class="col-sm-5 border-start border-3 border-dark">
+            <div class="hat-desc">
+              <div>
+                <h2 class="left"><strong>THE</strong> <span class="light">TRUCKER</span></h2>
+              </div>
+              <div><h3 class="left">GRUBBY, GROTTY, GREAT</h3></div>
+              <div>
+                <h4 class="left">You Can Almost Smell The Sweat And Gasoline</h4>
+              </div>
+              <div><h5 class="left">£75</h5></div>
+              <div>
+                <button type="button" class="hatless-button btn btn-outline-primary">Buy Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div
+            class="col-sm-7 order-sm-2 d-flex align-items-center justify-content-sm-start justify-content-xs-center img-col"
+          >
+            <div class="middle d-flex align-items-center">
+              <img src="./images/buy-me-500px.png" alt="Buy Me" />
+            </div>
+            <a href="#"
+              ><div class="hat-img d-flex align-items-center justify-content-center">
+                <img src="./images/blushing-bowler-500px.png" alt="Blushing Bowler" /></div
+            ></a>
+          </div>
+          <div class="col-sm-5 order-sm-1 border-end border-3 border-dark">
+            <div class="hat-desc">
+              <div>
+                <h2 class="right"><strong>THE</strong> <span class="light">BLUSHING BOWLER</span></h2>
+              </div>
+              <div><h3 class="right">PINKISH RED PERFECTION</h3></div>
+              <div><h4 class="right">For The City Gent With A Wild Side</h4></div>
+              <div><h5 class="right">£70</h5></div>
+              <div class="right">
+                <button type="button" class="hatless-button btn btn-outline-primary">Buy Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Hat catalogue ends -->
+
+      <!-- Keep footer all on one line even on small devices -->
+      <footer>
+        <form class="row">
+          <div class="col-1"></div>
+          <div class="col-2 mb-1 d-flex justify-content-end">
+            <img src="./images/monogram-250px.png" alt="Logo" class="img-fluid logo" />
+          </div>
+          <div class="col-3 mt-auto mb-1">Enter your email to keep up with our marvelous millinery!</div>
+          <div class="col-3 mt-auto mb-1">
+            <label class="visually-hidden" for="email">Name</label>
+            <input type="text" class="form-control email-input" id="email" placeholder="jane_doe@mymail.com" />
+          </div>
+          <div class="col-2 mt-auto mb-1">
+            <button type="submit" class="btn btn-outline-primary hatless-button">Submit</button>
+          </div>
+          <div class="col-1"></div>
+        </form>
+      </footer>
+    </div>
+  </body>
+</html>

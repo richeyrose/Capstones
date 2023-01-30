@@ -1,0 +1,302 @@
+* {
+    font-family: 'Inconsolata', monospace;
+    --default-border-color: #4c4c4c;
+    padding: 0px;
+}
+
+a {
+    color: #d4d4d4;
+    font-weight: bold;
+}
+
+a:hover {
+    color: white;
+    font-weight: bolder;
+}
+
+a:visited {
+    color: #8a8a8a;
+}
+
+body {
+    color: #d4d4d4;
+    background-color: #151515;
+    font-size: 14px;
+}
+
+/* Knock back the paragraph text slightly */
+p {
+    opacity: 0.9;
+}
+/* Main container for our page. Using  a grid layout based on two columns */
+.container {
+    display: grid;
+    max-width: 1080px;
+    position: relative;
+    margin: auto;
+    background-color: #1e1e1e;
+    grid-template-areas: "header header"
+                        "bio portfolio"
+                            "interests interests"
+                            "education education"
+                            "skills contact"
+                            "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px minmax(200, 800) 200px 200px 200px 100px;
+    border-color: #4c4c4c;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+}
+
+/* Split header into two rows */
+header {
+    grid-area: header;
+    background-color: #323233;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 2.5fr 0.5fr;
+    border-color: var(--default-border-color);
+    border-width: 1px 0 0 0;
+    border-style: solid;
+}
+
+/* Set some defaults */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    margin-top: 5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+h4 {
+    font-size: 24px;
+}
+
+li {
+    font-size: 18px;
+    list-style: none;
+    }
+    
+    /* utility class for bolding elements*/
+    .bold {
+    font-weight: bold;
+    opacity: 1;
+}
+
+/* Easy way of aligning our title*/
+.name {
+    display: flex;
+    align-items: center;
+}
+
+/* Put a bit of a drop shadow here which mimics (sort of) the VSCode interface */
+.blurb {
+    background-color: #252526;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 0px 10px 5px #151515;
+    z-index: 1;
+    border-color: var(--default-border-color);
+    border-width: 1px 0 0 0;
+    border-style: solid;
+}
+
+.blurb-list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    /* Don't want the text to wrap when we shrink window */
+    white-space: nowrap;
+}
+
+/* make sure there's a bit of padding around our text */
+.info-box {
+    padding: 20px;
+}
+
+/* These are used for doing the code highlighting in the header */
+.var {
+    color: #8cdcfe;
+}
+
+.class {
+    color: #4ec9b0;
+}
+
+.brackets {
+    color: #f8d705;
+}
+
+.string {
+    color: #c39178;
+}
+
+/* Nothing very interesting going on here except using css variable */
+.bio {
+    grid-area: bio;
+    border-color: var(--default-border-color);
+    border-width: 0 1px 0 0;
+    border-style: solid;
+}
+
+.portfolio {
+    grid-area: portfolio;
+}
+
+/* Set some list item formatting */
+.portfolio li,
+.education li,
+.contact-details li,
+.skill-body li,
+.skills li {
+    font-size: 14px;
+}
+
+.skills li,
+.education li,
+.portfolio li {
+    list-style: square;
+    margin-left: 15px;
+}
+.contact-details li {
+    text-align: left;
+}
+/* Create another grid for our list of interests and icons */
+.interests {
+    grid-area: interests;
+    display: grid;
+    border-color: var(--default-border-color);
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    grid-template-rows: 1fr 3fr;
+    align-items: center;
+}
+
+.interest-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.interest-list li {
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    justify-items: center;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.interest-img {
+    height: 75px;
+    width: 75px;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+/* Keep this nice and simple after the visual business of the above row */
+.education {
+    grid-area: education;
+    border-color: var(--default-border-color);
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    padding-top: 0px;
+}
+
+/* Split this into two columns */
+.skills {
+    grid-area: skills;
+    display: grid;
+    border-color: var(--default-border-color);
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    grid-template-areas: "skill-header skill-header"
+        "skill-body skill-body";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.skills h4 {
+    grid-area: skill-header;
+}
+
+.skills body {
+    grid-area: skill-body;
+}
+
+/* Same again. Two columns */
+.contact-details {
+    grid-area: contact;
+    display: grid;
+    border-color: var(--default-border-color);
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    grid-template-areas: "header header"
+        "address portrait";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+    align-items: center;
+    padding-bottom: 0px;
+
+}
+
+
+.contact-details ul {
+    list-style-type: none;
+}
+
+.contact-details h4 {
+    grid-area: header;
+}
+
+/* Originally this was proper ascii art but it caused terrible performance issues
+ when resizing the window */
+.portrait {
+    grid-area: portrait;
+    justify-self: right;
+
+}
+
+.portrait img {
+    opacity: 1;
+    height: 180px;
+        float: right;
+        padding-bottom: 20px;
+}
+.address {
+    grid-area: address;
+    align-self: baseline;
+}
+
+.contact-details,
+.skills,
+.education h4 {
+    padding-top: 5px;
+}
+/* Nothing interesting going on here at the moment. Might put in  copyright notice
+later. */
+footer {
+    grid-area: footer;
+    display: grid;
+    border-color: var(--default-border-color);
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    align-items: center;
+    justify-items: center;
+    background-color: #252526;
+}
+footer h4 {
+    padding: 10px 0px;
+}

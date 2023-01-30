@@ -1,0 +1,215 @@
+<!-- I spent a LOT of time reading through the MDN flexbox and grid docs and ended
+up doing a couple of codecademy courses on flex and grid -->
+<!-- The general aim was to reproduce the look of VSCode as a CV, since I spend
+a lot of my time staring at it! -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Icons from https://game-icons.net/ -->
+  <!-- https://creativecommons.org/licenses/by/3.0/ -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata">
+  <!-- Reset styles for consistency in browsers -->
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Richard Rose CV</title>
+</head>
+
+<body>
+  <!-- This is the main container for the grid -->
+  <div class="container">
+    <header>
+      <!-- Make the header something a bit more interesting than just Richard Rose CV -->
+      <div class="name">
+        <h1>
+          <span class="var">new_employee</span> =
+          <span class="class">Person</span><span class="brackets">(</span><span class="string">"Richard"</span>,
+          <span class="string">"Rose"</span><span class="brackets">)</span>
+        </h1>
+      </div>
+      <!-- A little list of interests. TBH this is mostly about filling space -->
+      <div class="blurb">
+        <ul class="blurb-list bold">
+          <li>Programmer</li>
+          <li>3D Modeler</li>
+          <li>Fell Walker</li>
+        </ul>
+      </div>
+    </header>
+    <!-- Two column layout to mimic having two coding windows side by side -->
+    <div class="bio info-box">
+      <h2>Hello!</h2>
+      <p>
+        I'm an experienced IT professional with an eye for design, looking to
+        transition into a development role. I've spent a lot of time on the
+        "other side" of the development process, prioritizing, writing and
+        reviewing enhancement requests to develop bespoke systems, testing and
+        documenting newly developed features and designing and delivering
+        training.
+      </p>
+      <br />
+      <p>
+        I also have experience developing Blender add-ons written in Python,
+        including being the sole developer of MakeTile, a large and complex
+        add-on for creating procedurally generated dungeon tiles and buildings
+        for 3D printing that I ran a successful Kickstarter for. Additionally
+        I have done bits of programming on and off for fun and and as an
+        adjunct to various roles in an assortment of languages over the years,
+        including C, C++, HTML/CSS, MySQL, PHP and GAMS (which is the only
+        example of Knuth's literate programming I've ever come across in the
+        wild).
+      </p>
+      <br />
+      <p>
+        I'm currently taking part in a bootcamp sponsored by the DfE through
+        HyperionDev to improve my Python development skills and learn
+        development the "proper" way. I'm passionate about learning new skills
+        and believe I would be an asset to any team.
+      </p>
+    </div>
+
+    <div class="portfolio info-box">
+      <h2>My Work</h2>
+      <p>
+        You can find my Github
+        <a target="_blank" rel="noreferrer noopener" href="https://github.com/richeyrose">here</a>
+      </p>
+      <br />
+      <p>
+        You should definitely check out the videos I've done on
+        <a target="_blank" rel="noreferrer noopener" href="https://www.youtube.com/@modmodterrain5759">MakeTile</a>
+        to give you an idea of what it's all about. I think it's pretty good
+        for a self taught programmer!
+      </p>
+      <br />
+      <p>
+        Have a look at the
+        <a target="_blank" rel="noreferrer noopener" href="https://maketile.readthedocs.io/en/latest/">docs</a>
+        as well. I know a lot of people hate writing them but it's something I
+        really enjoy!
+      </p>
+      <ul class="work-experience">
+        <li><span class="bold">2022 - Present</span> IT Systems Administrator: EMQN CIC</li>
+        <li><span class="bold">2021 - 2022</span> IT Administrator: EMQN CIC</li>
+        <li>
+          <span class="bold">2019 - 2021</span> Finance Administrator / IT Administrator: EMQN / MFT
+        </li>
+        <li>
+          <span class="bold">2019 - 2022</span> Sole Developer of MakeTile: ModMod Terrain (a.k.a. me)
+        </li>
+        <li><span class="bold">2018 - 2019</span> Finance Administrator: EMQN / MFT</li>
+        <li><span class="bold">2014 - 2018</span> Administration Assistant: EMQN / MFT</li>
+        <li>
+          <span class="bold">2012 - 2014</span> Art Workshop Assistant: Shaw Trust Art-Works Project
+        </li>
+        <li><span class="bold">2010 - 2018</span> Freelance Digital Sculptor, Modeller and Rigger</li>
+        <li><span class="bold">2009 - 2010</span> Assistant to the CEO: Beatbullying</li>
+        <li>
+          <span class="bold">2006 - 2009</span> Research Assistant: Dr H. David Evans, Sussex University
+        </li>
+        <li><span class="bold">2005 - 2009</span> Student: Sussex University</li>
+        <li><span class="bold">2001 - 2005</span> Various</li>
+      </ul>
+    </div>
+    <!-- Switch back to single columns for a couple fo thin rows for visual variety -->
+    <div class="interests">
+      <h4>Interests</h4>
+      <!-- List some interests and make it funky with some nice icons -->
+      <ul class="interest-list">
+        <li>
+          <img src="./images/vr-headset.svg" alt="VR Headset" class="interest-img" />VR
+        </li>
+        <li>
+          <img src="./images/walking-boot.svg" alt="Walking Boots" class="interest-img" />
+          Hiking
+        </li>
+        <li>
+          <img src="./images/3d-printer-512.png" alt="3D Printer" class="interest-img" />3D Printing
+        </li>
+        <li>
+          <img src="./images/mouse.svg" alt="Mouse" class="interest-img" />CGI
+        </li>
+        <li>
+          <img src="./images/platform.svg" alt="Abstract Platform" class="interest-img" />
+          ProcGen
+        </li>
+        <li>
+          <img src="./images/palette.svg" alt="Artist's Pallete" class="interest-img" />
+          Art & Design
+        </li>
+      </ul>
+    </div>
+    <!-- Back to plain text for this section. DOn;t want it to be too busy -->
+    <div class="education info-box">
+      <h4>Education</h4>
+      <ul>
+        <li><span class="bold">2022 - Present</span> Software Engineering Bootcamp: HyperionDev</li>
+        <li>
+          <span class="bold">2008 - 2009</span> MA Philosophy - Distinction: University of Sussex
+        </li>
+        <li><span class="bold">2005 - 2008</span> BA Politics and Philosophy: 1st Class Honors</li>
+        <li>
+          <span class="bold">2004 - 2005</span> Open University: Level 1 Introduction to the
+          Humanities
+        </li>
+        <li>
+          <span class="bold">1997 - 2000</span> Wigan and Leigh College: Art Foundation Course
+          (Distinction) and AGNVQ General Art and Design (Distinction)
+        </li>
+        <li>
+          <span class="bold">1992 - 1997</span> Southlands High School: 8 G.C.S.E's Grades A*- C
+        </li>
+      </ul>
+    </div>
+    <!-- Two column layout again for more interest -->
+    <div class="skills info-box">
+      <!-- Split our skills list into two columns -->
+      <h4>Skills</h4>
+      <div>
+        <ul>
+          <li>Python</li>
+          <li>HTML/CSS</li>
+          <li>MySQL</li>
+          <li>Django</li>
+          <li>Bootstrap</li>
+          <li>Requirements gathering</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>Enhancement request writing</li>
+          <li>Project Management</li>
+          <li>Documentation writing</li>
+          <li>Systems rollout and user training</li>
+          <li>Graphic Design</li>
+          <li>Windows systems administration</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Again split this into two columns -->
+    <div class="contact-details info-box">
+      <h4>Get in touch!</h4>
+      <div class="address">
+        <ul>
+          <li>Richard Rose</li>
+          <li>richeyrose@gmail.com</li>
+        </ul>
+      </div>
+      <!-- I actually had this as proper ascii art originally but it made 
+                                                          resizing the window in chrome lag badly. -->
+      <div class="portrait">
+        <img src="./images/ascii_portrait_2.png" alt="Ascii art portrait of Richard Rose">
+      </div>
+    </div>
+    <!-- Just to visually indicate the end -->
+    <footer>
+      <h4>Speak to you soon!</h4>
+    </footer>
+  </div>
+  <div></div>
+</body>
+
+</html>

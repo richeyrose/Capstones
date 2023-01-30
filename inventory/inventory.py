@@ -1,4 +1,4 @@
-"""This module defines a shoe inventory systemt hat can be interacted with."""
+"""This module defines a shoe inventory system that can be interacted with."""
 import csv
 import os
 from tabulate.tabulate import tabulate

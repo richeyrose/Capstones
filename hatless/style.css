@@ -1,0 +1,142 @@
+body {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: black;
+}
+
+/* Need to set a min width on our container to ensure bootstrao doesn't overide
+stacking */
+.container {
+  min-width: 500px;
+}
+
+h1 {
+  font-size: 12rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+h1 .underline {
+  position: relative;
+  text-decoration: underline;
+  font-size: 10rem;
+  top: 5px;
+  padding-left: 1rem;
+}
+
+h2 {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 3rem;
+  color: cornflowerblue;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 3rem;
+}
+
+p {
+  margin-bottom: 0px;
+  margin-left: 25px;
+  font-size: 1rem;
+}
+
+.light {
+  font-weight: 300 !important;
+}
+
+/* Set height of header */
+.hero {
+  max-height: 200px;
+}
+
+/* Info on smooth transitons and overlays from
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity */
+
+/* This is a long time for an ease, but it's a big image and we're knocking back the
+opacity a long way*/
+.hat-img img {
+  height: 250px;
+  opacity: 1;
+  transition: 1s ease;
+  backface-visibility: hidden;
+  max-height: 250px;
+  min-height: 250px;
+  padding: 0 50px;
+  z-index: 2;
+}
+
+.hat-img img:hover {
+  opacity: 0.6;
+}
+
+.hatless-button {
+  border-radius: 0;
+  border-color: white;
+  color: cornflowerblue;
+  min-width: 10px;
+  transition: 0.5s ease;
+  text-align: left;
+}
+
+.hatless-button:hover {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+/* Used for descriptions */
+.right {
+  text-align: end;
+  padding-right: 10px;
+}
+.left {
+  text-align: start;
+}
+
+.hat-desc {
+  height: 100%;
+}
+
+.right-bar {
+  border-left: 3px solid black;
+}
+
+.left-bar {
+  border-right: 3px solid black;
+}
+
+.hat-row img {
+  max-width: 25%;
+}
+.hat-row {
+  height: 100px;
+}
+
+/* Used for "BUY ME" image behind hats */
+.middle {
+  position: absolute;
+  z-index: 1;
+  color: black;
+}
+
+.middle img {
+  max-height: 250px;
+  min-height: 250px;
+  padding: 0 50px;
+}
+
+.footer {
+  height: 75px;
+}
+
+/* Used for monogram in footer */
+.logo {
+  max-width: 100%;
+}
